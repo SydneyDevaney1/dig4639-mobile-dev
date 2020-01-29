@@ -9,18 +9,6 @@ The *ice* folder contains in-class exercises.
 ## About Me
 https://www.linkedin.com/in/sydney-devaney-841021151/ 
 
-<<<<<<< HEAD
 I would love to work as a digital tech for a fashion magazine.  Working as a social media marketer or front end developer for the brand's website and/or app are two things I'm very interested in.
 
 closes #6
-=======
-## Merging
- 1. Item 1 [Google](http://www.google.com)
- 1. Item 2
- 1. Item 3
-This is the change.
-
-## Conflicts
-
-This section represents code on the server that isn't on the local repository.
->>>>>>> 64d01955e21d788072f8747da3667ef80b5707d2
