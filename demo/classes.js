@@ -1,37 +1,38 @@
-class Pet{
+class Pet {
     petSound;
     petFeeding;
-    constructor(species){
-        this.species = species;
+    constructor (species) {
+      this.species = species
     }
-        speak(){
-            return "no Words";
-        }
-}
 
-class Cat extends Pet{
-    constructor(props){
-        super("cat");
-        this.props = props;
-    }
-    clickHandler = parameter => parameter+this.props.name;
-    }
-    speak() {
-        this.clickHandler();
-        return `${super.speak()} Meow, I am a ${this.species}`;
+    speak () {
+      return 'no Words'
     }
 }
 
+class Cat extends Pet {
+  constructor (props) {
+    super('cat')
+    this.props = props
+  }
 
-function makePetSpeak(pet){
-    console.log(pet.speak());
+    clickHandler = parameter => parameter + this.props.name;
+
+    speak () {
+      this.clickHandler()
+      return `${super.speak()} Meow, I am a ${this.species}`
+    }
 }
 
-var myPet = new Pet();
-makePetSpeak(myPet);
-//console.log(myPet.speak());
-var myCat = new Cat({name: "Luna Lovegood"});
-makePetSpeak(myCat);
-var newFunc = myCat.clickHandler;
+function makePetSpeak (pet) {
+  console.log(pet.speak())
+}
+
+var myPet = new Pet()
+makePetSpeak(myPet)
+// console.log(myPet.speak());
+var myCat = new Cat({ name: 'Luna Lovegood' })
+makePetSpeak(myCat)
+var newFunc = myCat.clickHandler
 console.log(newFunc)
-//console.log(myCat.speak());
+// console.log(myCat.speak());
