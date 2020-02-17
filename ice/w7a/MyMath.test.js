@@ -1,8 +1,41 @@
-import { Sum } from './sum.js'
+import { Sum } from './MyMath.js'
+
+describe('Testing Addlist ', () =>{
+it('Returns the sum of a list of numbers', () => 
+{
+  let list = [1,2,3,4,];
+  let result = AddList(list);
+  expect(result).toBe(10);
+  list = [1,2,3,4,100,10000];
+  result = AddList(list);
+  expect(result).toBe(10110);
+  })
+})
+it('Member of list is undefined', () => 
+{
+  let list = [1,undefined,3,4,];
+  let result = AddList(list);
+  expect(result).toBeUndefined();
+  
+})
+
+describe('Testing Sum', () => {
+it ('Adds a string and a number', () =>{
+  var result = Sum("Test", 5);
+  expect(result).toBeUndefined();
+});
+
 
 test('adds 1 + 2 to equal 3', () => {
   expect(Sum(1, 2)).toBe(3)
 })
+
+
+test('Border cases', () => {
+  expect(Sum(-10, 5)).toBe(-5)
+  //expect(Sum(.1, .2)).toBe(.3)
+  //expect(Sum(10000000000, 10000000000)).teBe(20000000000);
+    })
 
 // ICE 
 
@@ -24,4 +57,5 @@ test('zero', () => {
   expect(z).not.toBeUndefined()
   expect(z).not.toBeTruthy()
   expect(z).toBeFalsy()
+})
 })
