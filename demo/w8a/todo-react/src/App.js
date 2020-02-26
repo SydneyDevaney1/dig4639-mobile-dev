@@ -22,7 +22,7 @@ class App extends React.Component{
     console.log(this.state.todoList)
     console.log(taskID)
     console.log(this.state.todoList[0].id)
-    let newList = this.state.todoList.filter((task)=>(task.id !== taskD))
+    let newList = this.state.todoList.filter((task)=>(task.id !== taskID))
     console.log(newList)
     this.setState({ todoList:newList})
   }
