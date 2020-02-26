@@ -93,7 +93,7 @@ function printTodoList(todoList) {
 }
 printTodoList(todoList1)
 
-const filteredtodoList = todoList1.filter((value) => value.completed)
+const filteredTodoList = todoList1.filter((value) => value.completed)
 printTodoList(filteredTodoList)
 
 const sortedTodoList = todoList.sort((a, b) => a.priority - b.priority)
