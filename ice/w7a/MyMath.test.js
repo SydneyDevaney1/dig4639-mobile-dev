@@ -1,4 +1,5 @@
 import { Sum } from './MyMath.js'
+<<<<<<< HEAD
 
 describe('Testing Addlist ', () =>{
 it('Returns the sum of a list of numbers', () => 
@@ -25,6 +26,8 @@ it ('Adds a string and a number', () =>{
   expect(result).toBeUndefined();
 });
 
+=======
+>>>>>>> 9abce194990a9fd96cdb92c3fb97fafabbd4ce40
 
 test('adds 1 + 2 to equal 3', () => {
   expect(Sum(1, 2)).toBe(3)
